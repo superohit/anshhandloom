@@ -1,0 +1,77 @@
+{% extends 'index.html' %}
+{% include 'ansh/navbar.html'%}
+
+{% load static %}
+
+{% block content %}
+<section class="home-class" id="home">
+<div class="home-txt">
+<h1>WELCOME TO ANSH HANDLOOM</h1>
+<p>Best Handloom Product Manufacturing Unit in Panipat, Haryana.</p>
+</div>
+<div class="container-slider">
+
+<div class="box-slider">
+  <div class="slider-gallary">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="image-slider">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'images/rajai.jpeg' %}" alt="Bed Sheet">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'images/mattress-protector.jpg' %}"  alt="Comforter">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'images/flannel-bedsheet.jpeg' %}" alt="Ultrasonic Machine">
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="box-slider">
+<div class="slider-gallary">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="image-slider">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{% static 'images/bedsheet.jpeg' %}" alt="Bed Sheet">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'images/rajai-web.jpg' %}"  alt="Comforter">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'images/bedsheet3.jpeg' %}" alt="Ultrasonic Machine">
+      </div>
+    </div>
+</div>
+  </div>
+</div>
+</div>
+
+
+<div class="box-slider">
+  <div class="slider-gallary">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="image-slider">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'images/comforter3.jpeg' %}" alt="Bed Sheet">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'images/team-5.png' %}"  alt="Comforter">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'images/team-6.png' %}" alt="Ultrasonic Machine">
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock %}

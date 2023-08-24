@@ -1,0 +1,98 @@
+{% load static %}
+
+{% block content %}
+
+<section class="products" id="products">
+  <div class="product">
+
+  <strong class="nav-title"> Our Products </strong><hr>
+
+    <div class="product-gallary">
+      <h4>Sample Products</h4><br>
+      <div class="container">
+        <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="{% static 'images/team-4.png' %}" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Three Frill Bedcover</h5>
+                      <a href="#!" class="btn btn-primary">More Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="{% static 'images/team-5.png' %}" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Ultrasonic Comforter</h5>
+                      <a href="#!" class="btn btn-primary">More Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="{% static 'images/team-6.png' %}" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Bedcover</h5>
+                      <a href="#!" class="btn btn-primary">More Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel items here -->
+            <div class="carousel-item"> 
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Card 4 content -->
+                  <div class="card">
+                    <img src="{% static 'images/team-1.png' %}" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Ultrasonic Comforter</h5>
+                      <a href="#!" class="btn btn-primary">More Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <!-- Card 5 content -->
+                  <div class="card">
+                    <img src="{% static 'images/team-2.png' %}" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Fiber Rajai</h5>
+                      <a href="#!" class="btn btn-primary">More Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <!-- Card 6 content -->
+                  <div class="card">
+                    <img src="{% static 'images/team-3.png' %}" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Multi Needle Comforter</h5>
+                      <a href="#!" class="btn btn-primary">More Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black;"></span>
+            <span class="visually-hidden" style="color:black;">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="color:black;"></span>
+            <span class="visually-hidden" style="color:black;">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}

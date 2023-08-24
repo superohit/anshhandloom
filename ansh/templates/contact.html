@@ -1,0 +1,56 @@
+{% load static %}
+{% block content %}
+<section class="contact-class" id="contact">
+    <div class="contact" class="container">
+        <strong class="nav-title"> Contact Us </strong><hr>
+
+        <div class="contact-form">
+            <form method="post" id="contact-form" action="{% url 'home' %}">
+                {% csrf_token %}
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                <input type="email" id="email" name="email" placeholder="Email id" required><br>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea><br>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            {% if success_message %}
+                <p class="success">{{ success_message }}</p>
+            {% endif %}
+            {% if error_message %}
+                <p class="error">{{ error_message }}</p>
+            {% endif %}
+        </div>
+        
+
+       
+
+    <div class="container">
+        <div class="box" style="background:gold; border-radius:5%; padding-bottom:20px; padding-top:20px;">
+            <h3>Phone Number</h3><hr><br/>
+            (M) +91 9634536315<br/>
+            (M) +91 7082076697<br/><br/>
+            <button onclick="makeCall()" class="btn btn-primary">Call Now</button>
+            
+
+        </div>
+        <div class="box" style="background:gold; border-radius:5%; padding-bottom:20px; padding-top:20px;">
+            <h3>Email Address</h3><hr><br/>
+            nand1997ram@gmail.com<br/>
+            anshhandloom.panipat@gmail.com<br/><br/>
+            <button onclick="openEmailApp()" class="btn btn-primary">Mail Us</button>
+            
+
+        </div>
+
+    </div>
+
+<div class="map" class="box">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13908.683114912288!2d76.9801476!3d29.3652884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddaee40000001%3A0x2a66ecd831c86c86!2sAnsh%20Handloom!5e0!3m2!1sen!2sin!4v1692186824973!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+
+</section>
+
+
+{% endblock %}
